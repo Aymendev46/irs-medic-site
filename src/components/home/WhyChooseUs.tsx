@@ -33,7 +33,7 @@ const PILLARS = [
 
 export default function WhyChooseUs() {
   return (
-    <section className="border-b border-white/[0.07] bg-[#0a1220]">
+    <section className="border-b border-white/[0.07] bg-[#0a1220] min-h-screen flex flex-col justify-center">
       <div className="max-w-5xl mx-auto px-6 md:px-10 py-14">
         <div className="mb-8">
           <div className="flex items-center gap-3 mb-4">

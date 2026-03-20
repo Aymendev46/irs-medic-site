@@ -45,7 +45,7 @@ const TESTIMONIALS = [
 
 export default function Testimonials() {
   return (
-    <section id="testimonials" className="border-b border-white/[0.07] bg-[#080f1e]">
+    <section id="testimonials" className="border-b border-white/[0.07] bg-[#080f1e] min-h-screen flex flex-col justify-center">
       <div className="max-w-5xl mx-auto px-6 md:px-10 py-20">
         <div className="mb-12">
           <div className="flex items-center gap-3 mb-4">

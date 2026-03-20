@@ -37,7 +37,7 @@ const ATTORNEYS = [
 
 export default function Attorneys() {
   return (
-    <section id="team" className="border-b border-white/[0.07] bg-[#080f1e]">
+    <section id="team" className="border-b border-white/[0.07] bg-[#080f1e] min-h-screen flex flex-col justify-center">
       <div className="max-w-5xl mx-auto px-6 md:px-10 py-14">
         {/* Header */}
         <div className="mb-8">

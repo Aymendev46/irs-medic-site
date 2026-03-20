@@ -12,7 +12,7 @@ const TRUST_BADGES = [
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-[#080f1e] min-h-[88vh] flex flex-col justify-between">
+    <section className="relative overflow-hidden bg-[#080f1e] min-h-screen flex flex-col justify-between">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#0d1e38] via-[#080f1e] to-[#080f1e] pointer-events-none" />
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-gold/[0.03] rounded-full blur-3xl pointer-events-none" />

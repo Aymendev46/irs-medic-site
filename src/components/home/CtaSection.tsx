@@ -4,7 +4,7 @@ const PHONE_HREF = "tel:+12032858545";
 
 export default function CtaSection() {
   return (
-    <section id="contact" className="border-b border-white/[0.07] bg-[#0a1220]">
+    <section id="contact" className="border-b border-white/[0.07] bg-[#0a1220] min-h-screen flex flex-col justify-center">
       <div className="max-w-5xl mx-auto px-6 md:px-10 py-20">
         <div className="max-w-2xl mx-auto text-center">
           {/* Eyebrow */}
