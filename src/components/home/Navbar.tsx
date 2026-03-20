@@ -11,18 +11,6 @@ const PHONE_HREF = "tel:+12032858545";
 export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 bg-[#080f1e]/95 backdrop-blur-sm border-b border-white/[0.07]">
-      {/* Utility bar */}
-      <div className="hidden lg:flex items-center justify-between px-10 py-[7px] border-b border-white/[0.04]">
-        <p className="text-[11px] text-white/30">
-          Parent &amp; Parent LLP · Attorneys &amp; CPAs · Serving clients worldwide since 2007
-        </p>
-        <a
-          href={PHONE_HREF}
-          className="text-[11px] text-gold hover:text-gold/80 transition-colors font-medium tracking-wide"
-        >
-          Call us: {PHONE}
-        </a>
-      </div>
       {/* Main nav */}
       <nav className="flex items-center justify-between px-6 md:px-10 py-4">
         <Link href="/" className="flex items-center gap-3" aria-label="IRSMedic home">
