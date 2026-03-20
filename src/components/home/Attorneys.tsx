@@ -75,27 +75,28 @@ export default function Attorneys() {
 
               {/* Bio */}
               <div className="px-7 py-6">
-                {/* Photo + name */}
-                <div className="flex items-center gap-4 mb-4">
-                  <div className="relative w-20 h-20 rounded-2xl overflow-hidden flex-shrink-0 ring-2 ring-lime/25 shadow-[0_0_20px_-4px_rgba(141,198,63,0.25)]">
+                {/* Photo */}
+                <div className="flex justify-center mb-5">
+                  <div className="relative w-36 h-44 rounded-2xl overflow-hidden ring-2 ring-lime/25 shadow-[0_0_30px_-6px_rgba(141,198,63,0.3)]">
                     <Image
                       src={a.photo}
                       alt={a.name}
                       fill
-                      sizes="80px"
+                      sizes="144px"
                       className="object-cover object-top"
                     />
                   </div>
-                  <div>
-                    <h3 className="text-[15px] font-semibold text-white">
-                      {a.name},{" "}
-                      <span className="text-lime font-normal">{a.credentials}</span>
-                    </h3>
-                    <p className="text-[11px] text-white/35 mt-0.5">{a.role}</p>
-                    <p className="text-[10px] text-lime/40 mt-0.5 tracking-[0.3px]">
-                      {a.firm}
-                    </p>
-                  </div>
+                </div>
+                {/* Name / role */}
+                <div className="mb-4">
+                  <h3 className="text-[15px] font-semibold text-white">
+                    {a.name},{" "}
+                    <span className="text-lime font-normal">{a.credentials}</span>
+                  </h3>
+                  <p className="text-[11px] text-white/35 mt-0.5">{a.role}</p>
+                  <p className="text-[10px] text-lime/40 mt-0.5 tracking-[0.3px]">
+                    {a.firm}
+                  </p>
                 </div>
 
                 <p className="text-[12px] text-white/40 leading-[1.75] font-light mb-5">
