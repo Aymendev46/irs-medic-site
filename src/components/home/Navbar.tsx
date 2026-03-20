@@ -10,7 +10,7 @@ const PHONE_HREF = "tel:+12032858545";
 
 export default function Navbar() {
   return (
-    <header className="sticky top-0 z-50 bg-[#080f1e]/95 backdrop-blur-sm border-b border-white/[0.07]">
+    <header className="h-[72px] sticky top-0 z-50 bg-[#080f1e]/95 backdrop-blur-sm border-b border-white/[0.07] flex items-center">
       {/* Main nav */}
       <nav className="flex items-center justify-between px-6 md:px-10 py-4">
         <Link href="/" className="flex items-center gap-3" aria-label="IRSMedic home">
