@@ -1,11 +1,12 @@
+import Image from "next/image";
+
 const ATTORNEYS = [
   {
     name: "Anthony E. Parent",
     credentials: "Esq.",
     role: "Managing Partner",
     firm: "IRSMedic | Parent & Parent LLP",
-    team: "OneTeam Legal & Tax",
-    initials: "AP",
+    photo: "https://media.licdn.com/dms/image/v2/D4E03AQGZuj6K1dk6aQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1723057333235?e=1775692800&v=beta&t=dCTwxWwQlRutm4kNuLomHL2xO_wd5R_v8gNz5vOrxew",
     quote:
       "Saving our clients' fortunes and their sanity honestly gives me a rush. I love what we do.",
     bio: "Anthony founded Parent & Parent LLP after recognizing that most tax attorneys lacked the accounting fluency to truly protect clients. He focuses on high-stakes IRS disputes, offshore disclosure, criminal tax defense, and complex international tax matters — representing clients before the U.S. Tax Court and in over 40 countries.",
@@ -21,8 +22,7 @@ const ATTORNEYS = [
     credentials: "CPA",
     role: "Tax Director",
     firm: "IRSMedic | Parent & Parent LLP",
-    team: "OneTeam Legal & Tax",
-    initials: "MM",
+    photo: "https://media.licdn.com/dms/image/v2/D4E03AQGmW7a-JijG-w/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1719417001353?e=1775692800&v=beta&t=pcrSgGOkGRCA-eN1WJC4DUjoGc_cItPy4r5faNiLeNU",
     quote:
       "Being a part of IRSMedic allows me to be the CPA I always wanted to be: On the side of our clients.",
     bio: "Michael leads the accounting and compliance operations at the firm, ensuring every legal strategy is grounded in airtight financial analysis. His work spans forensic accounting, offshore compliance, multi-year back filings, and tax return preparation — so clients are never left with a gap between their legal defense and their financial records.",
@@ -62,13 +62,10 @@ export default function Attorneys() {
             >
               {/* Quote banner */}
               <div className="relative bg-gradient-to-br from-[#0d1e10] to-[#0a1628] px-7 pt-7 pb-6 border-b border-white/[0.06]">
-                {/* Big quotation mark */}
                 <div className="absolute top-4 left-5 font-playfair text-[3rem] leading-none text-lime/25 select-none">
                   &ldquo;
                 </div>
-                {/* Left lime bar */}
                 <div className="absolute left-0 top-6 bottom-6 w-[3px] bg-lime/60 rounded-r" />
-
                 <blockquote className="pl-4 pt-4">
                   <p className="text-[15px] font-playfair font-medium text-white/85 leading-[1.65] italic">
                     &ldquo;{a.quote}&rdquo;
@@ -78,12 +75,16 @@ export default function Attorneys() {
 
               {/* Bio */}
               <div className="px-7 py-6">
-                {/* Name / role */}
+                {/* Photo + name */}
                 <div className="flex items-center gap-4 mb-4">
-                  <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-lime/25 to-[#0d1e10] border-2 border-lime/30 flex items-center justify-center flex-shrink-0 shadow-[0_0_20px_-4px_rgba(141,198,63,0.25)]">
-                    <span className="font-playfair text-[1.3rem] font-bold text-lime">
-                      {a.initials}
-                    </span>
+                  <div className="relative w-16 h-16 rounded-2xl overflow-hidden flex-shrink-0 ring-2 ring-lime/25 shadow-[0_0_20px_-4px_rgba(141,198,63,0.25)]">
+                    <Image
+                      src={a.photo}
+                      alt={a.name}
+                      fill
+                      sizes="64px"
+                      className="object-cover object-top"
+                    />
                   </div>
                   <div>
                     <h3 className="text-[15px] font-semibold text-white">
