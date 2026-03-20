@@ -21,3 +21,11 @@ body {
   animation: marquee 28s linear infinite;
 }
 
+.press-item:hover .press-dot {
+  background-color: var(--brand-color);
+  opacity: 0.7;
+}
+.press-item:hover .press-name {
+  color: var(--brand-color);
+}
+

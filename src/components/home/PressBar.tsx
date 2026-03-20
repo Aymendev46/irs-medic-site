@@ -1,14 +1,14 @@
 /* Sliding press/media strip — brands from the original irsmedic.com */
 
 const OUTLETS = [
-  { name: "The Wall Street Journal", type: "press" },
-  { name: "CNBC", type: "press" },
-  { name: "Fox Business", type: "press" },
-  { name: "ExpatFocus", type: "press" },
-  { name: "TaxConnections", type: "press" },
-  { name: "FAIRtax", type: "press" },
-  { name: "Amazon Best Seller", type: "book" },
-  { name: "Forbes", type: "press" },
+  { name: "The Wall Street Journal", type: "press", color: "#C8A951" },
+  { name: "CNBC",                    type: "press", color: "#0096D9" },
+  { name: "Fox Business",            type: "press", color: "#F5821F" },
+  { name: "ExpatFocus",              type: "press", color: "#38BDF8" },
+  { name: "TaxConnections",          type: "press", color: "#22C55E" },
+  { name: "FAIRtax",                 type: "press", color: "#E63329" },
+  { name: "Amazon Best Seller",      type: "book",  color: "#FF9900" },
+  { name: "Forbes",                  type: "press", color: "#D92B2B" },
 ];
 
 // Duplicate for seamless loop
@@ -34,24 +34,24 @@ export default function PressBar() {
 
           <div className="flex animate-marquee whitespace-nowrap">
             {ITEMS.map((o, i) => (
-              <span
-                key={i}
-                className="inline-flex items-center gap-2 mx-8"
-              >
+              <span key={i} className="inline-flex items-center gap-2 mx-8">
                 {o.type === "book" ? (
-                  <span className="flex items-center gap-2">
-                    <span className="w-1.5 h-1.5 rounded-full bg-lime/60" />
-                    <span className="text-[12px] font-playfair font-bold text-white/50 tracking-wide">
-                      {o.name}
+                  <span className="flex items-center gap-2.5">
+                    <span className="w-2 h-2 rounded-full bg-[#FF9900]/60" />
+                    <span className="text-[13px] font-playfair font-bold text-white/55 tracking-wide">
+                      Amazon Best Seller
                     </span>
-                    <span className="text-[9px] text-lime/70 border border-lime/25 bg-lime/5 px-1.5 py-0.5 rounded uppercase tracking-[1px] font-medium">
+                    <span className="text-[11px] font-bold text-[#080f1e] bg-[#FF9900] px-2 py-0.5 rounded font-sans tracking-[0.5px]">
                       #1
                     </span>
                   </span>
                 ) : (
-                  <span className="flex items-center gap-2">
-                    <span className="w-1 h-1 rounded-full bg-white/15" />
-                    <span className="text-[13px] font-playfair font-bold text-white/40 tracking-wide uppercase hover:text-white/60 transition-colors cursor-default">
+                  <span
+                    className="press-item flex items-center gap-2 cursor-default"
+                    style={{ "--brand-color": o.color } as React.CSSProperties}
+                  >
+                    <span className="press-dot w-1 h-1 rounded-full bg-white/15 transition-colors duration-300" />
+                    <span className="press-name text-[13px] font-playfair font-bold text-white/40 tracking-wide uppercase transition-colors duration-300">
                       {o.name}
                     </span>
                   </span>
