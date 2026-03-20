@@ -12,16 +12,16 @@ const TRUST_BADGES = [
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-[#080f1e]">
+    <section className="relative overflow-hidden bg-[#080f1e] min-h-[88vh] flex flex-col justify-between">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#0d1e38] via-[#080f1e] to-[#080f1e] pointer-events-none" />
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-gold/[0.03] rounded-full blur-3xl pointer-events-none" />
 
-      <div className="relative max-w-5xl mx-auto px-6 md:px-10 pt-20 pb-16">
+      <div className="relative max-w-5xl mx-auto px-6 md:px-10 pt-12 pb-16 flex-1">
         {/* Eyebrow */}
         <div className="flex items-center gap-3 mb-8">
-          <div className="w-8 h-px bg-lime/50" />
-          <span className="text-[11px] tracking-[2.5px] text-lime/70 uppercase font-medium">
+          <div className="w-8 h-px bg-gold/50" />
+          <span className="text-[11px] tracking-[2.5px] text-gold/70 uppercase font-medium">
             Parent &amp; Parent LLP — IRS Resolution Since 2007
           </span>
         </div>
@@ -99,7 +99,7 @@ export default function Hero() {
             { num: "20+", label: "Years in practice" },
             { num: "50 States", label: "+ International" },
           ].map((s) => (
-            <div key={s.num} className="md:px-8 first:pl-0 last:pr-0 text-center md:text-left">
+            <div key={s.num} className="px-6 text-center">
               <div className="font-playfair text-[1.7rem] font-bold text-gold leading-none mb-1">
                 {s.num}
               </div>

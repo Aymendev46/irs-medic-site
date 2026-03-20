@@ -34,8 +34,8 @@ const PILLARS = [
 export default function WhyChooseUs() {
   return (
     <section className="border-b border-white/[0.07] bg-[#0a1220]">
-      <div className="max-w-5xl mx-auto px-6 md:px-10 py-20">
-        <div className="mb-12">
+      <div className="max-w-5xl mx-auto px-6 md:px-10 py-14">
+        <div className="mb-8">
           <div className="flex items-center gap-3 mb-4">
             <div className="w-6 h-px bg-gold/50" />
             <span className="text-[10px] tracking-[2.5px] text-gold/70 uppercase">Why IRSMedic</span>

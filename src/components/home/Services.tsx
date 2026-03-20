@@ -46,8 +46,8 @@ const SERVICES = [
 export default function Services() {
   return (
     <section id="services" className="border-b border-white/[0.07] bg-[#080f1e]">
-      <div className="max-w-5xl mx-auto px-6 md:px-10 py-20">
-        <div className="mb-12">
+      <div className="max-w-5xl mx-auto px-6 md:px-10 py-14">
+        <div className="mb-8">
           <div className="flex items-center gap-3 mb-4">
             <div className="w-6 h-px bg-gold/50" />
             <span className="text-[10px] tracking-[2.5px] text-gold/70 uppercase">Our Practice Areas</span>
@@ -65,7 +65,7 @@ export default function Services() {
           {SERVICES.map((svc) => (
             <div
               key={svc.title}
-              className="group bg-white/[0.025] border border-white/[0.07] rounded-xl p-6 hover:border-gold/25 hover:bg-white/[0.04] transition-all"
+              className="group bg-white/[0.025] border border-white/[0.07] rounded-xl p-5 hover:border-gold/25 hover:bg-white/[0.04] transition-all"
             >
               <div className="flex items-start justify-between mb-4">
                 <div className="w-8 h-8 rounded-lg bg-gold/10 border border-gold/20 flex items-center justify-center flex-shrink-0">

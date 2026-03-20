@@ -38,9 +38,9 @@ const ATTORNEYS = [
 export default function Attorneys() {
   return (
     <section id="team" className="border-b border-white/[0.07] bg-[#080f1e]">
-      <div className="max-w-5xl mx-auto px-6 md:px-10 py-20">
+      <div className="max-w-5xl mx-auto px-6 md:px-10 py-14">
         {/* Header */}
-        <div className="mb-12">
+        <div className="mb-8">
           <div className="flex items-center gap-3 mb-4">
             <div className="w-6 h-px bg-lime/60" />
             <span className="text-[10px] tracking-[2.5px] text-lime/70 uppercase">Our Team</span>
@@ -80,8 +80,8 @@ export default function Attorneys() {
               <div className="px-7 py-6">
                 {/* Name / role */}
                 <div className="flex items-center gap-4 mb-4">
-                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-lime/20 to-lime/5 border border-lime/20 flex items-center justify-center flex-shrink-0">
-                    <span className="font-playfair text-[0.95rem] font-bold text-lime">
+                  <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-lime/25 to-[#0d1e10] border-2 border-lime/30 flex items-center justify-center flex-shrink-0 shadow-[0_0_20px_-4px_rgba(141,198,63,0.25)]">
+                    <span className="font-playfair text-[1.3rem] font-bold text-lime">
                       {a.initials}
                     </span>
                   </div>
