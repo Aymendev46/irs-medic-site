@@ -24,7 +24,7 @@ export default function Navbar() {
           />
           <span className="font-playfair text-[1.25rem] font-bold tracking-[-0.3px] text-white leading-none">
             IRS<span className="text-gold">Medic</span>
-            <span className="block text-[10px] text-white/30 font-sans font-normal tracking-widest uppercase mt-0.5">
+            <span className="block text-[10px] text-lime/50 font-sans font-normal tracking-widest uppercase mt-0.5">
               Parent &amp; Parent LLP
             </span>
           </span>

@@ -14,6 +14,7 @@ const config: Config = {
           light: "#0d1e38",
         },
         gold: "#c8a96e",
+        lime: "#8dc63f",
       },
       fontFamily: {
         playfair: ["'Playfair Display'", "Georgia", "serif"],

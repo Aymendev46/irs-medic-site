@@ -20,8 +20,8 @@ export default function Hero() {
       <div className="relative max-w-5xl mx-auto px-6 md:px-10 pt-20 pb-16">
         {/* Eyebrow */}
         <div className="flex items-center gap-3 mb-8">
-          <div className="w-8 h-px bg-gold/50" />
-          <span className="text-[11px] tracking-[2.5px] text-gold/80 uppercase font-medium">
+          <div className="w-8 h-px bg-lime/50" />
+          <span className="text-[11px] tracking-[2.5px] text-lime/70 uppercase font-medium">
             Parent &amp; Parent LLP — IRS Resolution Since 2007
           </span>
         </div>
