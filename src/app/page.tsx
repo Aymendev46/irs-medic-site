@@ -1,25 +1,29 @@
 import Navbar from "@/components/home/Navbar";
 import Hero from "@/components/home/Hero";
 import PressBar from "@/components/home/PressBar";
-import WhyChooseUs from "@/components/home/WhyChooseUs";
 import Services from "@/components/home/Services";
+import WhyChooseUs from "@/components/home/WhyChooseUs";
+import Attorneys from "@/components/home/Attorneys";
 import Results from "@/components/home/Results";
+import Testimonials from "@/components/home/Testimonials";
 import CtaSection from "@/components/home/CtaSection";
 import Footer from "@/components/home/Footer";
 
 export default function HomePage() {
   return (
-    <div className="max-w-[1200px] mx-auto">
+    <>
       <Navbar />
       <main>
         <Hero />
         <PressBar />
-        <WhyChooseUs />
         <Services />
+        <WhyChooseUs />
+        <Attorneys />
         <Results />
+        <Testimonials />
         <CtaSection />
       </main>
       <Footer />
-    </div>
+    </>
   );
 }
