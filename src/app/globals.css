@@ -21,6 +21,12 @@ body {
   animation: marquee 28s linear infinite;
 }
 
+@media (max-width: 640px) {
+  .animate-marquee {
+    animation-duration: 10s;
+  }
+}
+
 .press-item:hover .press-dot {
   background-color: var(--brand-color);
   opacity: 0.7;
