@@ -6,7 +6,7 @@ const ATTORNEYS = [
     credentials: "Esq.",
     role: "Managing Partner",
     firm: "IRSMedic | Parent & Parent LLP",
-    photo: "https://media.licdn.com/dms/image/v2/D4E03AQGZuj6K1dk6aQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1723057333235?e=1775692800&v=beta&t=dCTwxWwQlRutm4kNuLomHL2xO_wd5R_v8gNz5vOrxew",
+    photo: "https://media.licdn.com/dms/image/v2/D4E03AQGmW7a-JijG-w/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1719417001353?e=1775692800&v=beta&t=pcrSgGOkGRCA-eN1WJC4DUjoGc_cItPy4r5faNiLeNU",
     quote:
       "Saving our clients' fortunes and their sanity honestly gives me a rush. I love what we do.",
     bio: "Anthony founded Parent & Parent LLP after recognizing that most tax attorneys lacked the accounting fluency to truly protect clients. He focuses on high-stakes IRS disputes, offshore disclosure, criminal tax defense, and complex international tax matters — representing clients before the U.S. Tax Court and in over 40 countries.",
@@ -22,7 +22,7 @@ const ATTORNEYS = [
     credentials: "CPA",
     role: "Tax Director",
     firm: "IRSMedic | Parent & Parent LLP",
-    photo: "https://media.licdn.com/dms/image/v2/D4E03AQGmW7a-JijG-w/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1719417001353?e=1775692800&v=beta&t=pcrSgGOkGRCA-eN1WJC4DUjoGc_cItPy4r5faNiLeNU",
+    photo: "https://media.licdn.com/dms/image/v2/D4E03AQGZuj6K1dk6aQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1723057333235?e=1775692800&v=beta&t=dCTwxWwQlRutm4kNuLomHL2xO_wd5R_v8gNz5vOrxew",
     quote:
       "Being a part of IRSMedic allows me to be the CPA I always wanted to be: On the side of our clients.",
     bio: "Michael leads the accounting and compliance operations at the firm, ensuring every legal strategy is grounded in airtight financial analysis. His work spans forensic accounting, offshore compliance, multi-year back filings, and tax return preparation — so clients are never left with a gap between their legal defense and their financial records.",
@@ -77,12 +77,12 @@ export default function Attorneys() {
               <div className="px-7 py-6">
                 {/* Photo + name */}
                 <div className="flex items-center gap-4 mb-4">
-                  <div className="relative w-16 h-16 rounded-2xl overflow-hidden flex-shrink-0 ring-2 ring-lime/25 shadow-[0_0_20px_-4px_rgba(141,198,63,0.25)]">
+                  <div className="relative w-20 h-20 rounded-2xl overflow-hidden flex-shrink-0 ring-2 ring-lime/25 shadow-[0_0_20px_-4px_rgba(141,198,63,0.25)]">
                     <Image
                       src={a.photo}
                       alt={a.name}
                       fill
-                      sizes="64px"
+                      sizes="80px"
                       className="object-cover object-top"
                     />
                   </div>
