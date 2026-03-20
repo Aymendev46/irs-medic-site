@@ -76,16 +76,14 @@ export default function Attorneys() {
               {/* Bio */}
               <div className="px-7 py-6">
                 {/* Photo */}
-                <div className="flex justify-center mb-5">
-                  <div className="relative w-36 h-44 rounded-2xl overflow-hidden ring-2 ring-lime/25 shadow-[0_0_30px_-6px_rgba(141,198,63,0.3)]">
-                    <Image
-                      src={a.photo}
-                      alt={a.name}
-                      fill
-                      sizes="144px"
-                      className="object-cover object-top"
-                    />
-                  </div>
+                <div className="relative w-full h-56 sm:w-36 sm:h-44 rounded-2xl overflow-hidden ring-2 ring-lime/25 shadow-[0_0_30px_-6px_rgba(141,198,63,0.3)] mb-5">
+                  <Image
+                    src={a.photo}
+                    alt={a.name}
+                    fill
+                    sizes="(max-width: 640px) 100vw, 144px"
+                    className="object-cover object-top"
+                  />
                 </div>
                 {/* Name / role */}
                 <div className="mb-4">
