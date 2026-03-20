@@ -12,12 +12,12 @@ const TRUST_BADGES = [
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-[#080f1e] min-h-[calc(100vh-72px)] flex flex-col justify-between">
+    <section className="relative overflow-hidden bg-[#080f1e] min-h-[calc(100vh-72px)] flex flex-col justify-center">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#0d1e38] via-[#080f1e] to-[#080f1e] pointer-events-none" />
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-gold/[0.03] rounded-full blur-3xl pointer-events-none" />
 
-      <div className="relative max-w-5xl mx-auto px-6 md:px-10 pt-12 pb-16 flex-1">
+      <div className="relative max-w-5xl mx-auto px-6 md:px-10 py-12">
         {/* Eyebrow */}
         <div className="flex items-center gap-3 mb-8">
           <div className="w-8 h-px bg-gold/50" />
@@ -90,24 +90,6 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Stats strip */}
-      <div className="relative border-t border-white/[0.07] bg-white/[0.015]">
-        <div className="max-w-5xl mx-auto px-6 md:px-10 py-8 grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-0 md:divide-x md:divide-white/[0.07]">
-          {[
-            { num: "$50M+", label: "Tax debt resolved" },
-            { num: "2,000+", label: "Clients helped" },
-            { num: "20+", label: "Years in practice" },
-            { num: "50 States", label: "+ International" },
-          ].map((s) => (
-            <div key={s.num} className="px-6 text-center">
-              <div className="font-playfair text-[1.7rem] font-bold text-gold leading-none mb-1">
-                {s.num}
-              </div>
-              <div className="text-[11px] text-white/35 tracking-[0.3px]">{s.label}</div>
-            </div>
-          ))}
-        </div>
-      </div>
     </section>
   );
 }

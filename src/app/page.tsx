@@ -1,5 +1,6 @@
 import Navbar from "@/components/home/Navbar";
 import Hero from "@/components/home/Hero";
+import StatsBar from "@/components/home/StatsBar";
 import PressBar from "@/components/home/PressBar";
 import Services from "@/components/home/Services";
 import WhyChooseUs from "@/components/home/WhyChooseUs";
@@ -15,6 +16,7 @@ export default function HomePage() {
       <Navbar />
       <main>
         <Hero />
+        <StatsBar />
         <PressBar />
         <Services />
         <WhyChooseUs />
